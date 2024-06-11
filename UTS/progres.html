@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progress Bar</title>
+<style>
+.progress-bar {
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  height: 20px;
+}
+
+.blue {
+  background-color: #3498db;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+
+.yellow {
+  background-color: #f1c40f;
+}
+
+.orange {
+  background-color: #e67e22;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+
+.indicator {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<div class="progress-bar">
+  <div class="progress-bar-inner blue" style="width: 18.5%"></div>
+  <div class="progress-bar-inner green" style="width: 4.5%"></div>
+  <div class="progress-bar-inner yellow" style="width: 1.5%"></div>
+  <div class="progress-bar-inner orange" style="width: 5%"></div>
+  <div class="progress-bar-inner red" style="width: 70.5%"></div>
+</div>
+
+<div class="indicator">
+  <span>0 - 18.5</span>
+  <span style="margin-left: 18.5%">18.5 - 23</span>
+  <span style="margin-left: 23%">23 - 25</span>
+  <span style="margin-left: 25%">25 - 30</span>
+  <span style="margin-left: 30%">30+</span>
+</div>
+
+</body>
+</html>
